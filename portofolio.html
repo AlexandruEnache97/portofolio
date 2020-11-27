@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles/home.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <title>My Projects</title>
+
+    </head>
+
+    <body>
+        <header class="sticky">
+            <div id="menu">
+                <div class = "header">
+                    <div class="title">
+                        <img src="./src/img/Next.png" alt="" />
+                        <p id="name">Portofolio</p>
+                    </div>
+                    <img src="./src/img/MenuIcon.png" class="menuBtn" alt="">
+                </div>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About me</a></li>
+                        <li><a href="#" class="dropdownprojects">Projects ▾ </a></li>
+                    </ul>
+
+                    <ul class="projectslist">
+
+                        <li><a href="websites.html" class="subprojects">Website</a></li>
+                        <li><a href="unity.html" class="subprojects">Unity Games</a></li>
+                        <li><a href="arduino.html" class="subprojects">Arduino</a></li>
+                        <li><a href="androidstudio.html" class="subprojects">Android Studio</a></li>
+                        <li><a href="pixelart.html" class="subprojects">Pixel Art</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class = "main">
+            <div class="sideContainer">
+
+            </div>
+            <div id="content">
+                <h1>Portofolio Projects</h1>
+                <div class="text">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;This site is designed to keep track of all my solo projects. </p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;The site is consisted only of frontend development as HTML, CSS and JavaScript.
+                    </p>
+                    <img src="./src/img/Sites/portofolio.png" class = "horizontalImg" alt="" /> 
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;The part of the CSS is done with SCSS because the structure of the code is more
+                        simpler and clear. A good advantage is that you can split the scss files in multiple parts and reuse them
+                        in more then one file.
+                    </p>
+                    <img src="./src/img/Sites/portofolio2.png" class = "verticalImg" alt="" /> 
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;The site is web responsive. This part is done in CSS with the @media property.
+                    </p>
+                    <img src="./src/img/Sites/portofolio3.png" class = "verticalImg" alt="" /> 
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;The JavaScript part is consisted of the menu functionalities.</p>
+                        <img src="./src/img/Sites/portofolio4.png" class = "verticalImg" alt="" /> 
+                   </div>
+                
+            </div>
+            
+            <div class="sideContainer">
+
+            </div>
+        </div>
+
+        
+        <script src="./scripts/app.js"></script>
+    </body>
+</html>

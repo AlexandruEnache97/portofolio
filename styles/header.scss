@@ -1,0 +1,159 @@
+header {
+    background: $backgroundHeaderColor;
+    display: flex;
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    justify-content: space-between;
+    align-items: baseline;
+
+
+    
+    .title {
+        padding-left: 3%;
+        width: 50%;
+        display: flex;
+        //flex-wrap: nowrap;
+        
+        img {
+            height: 70px;
+            padding-top: 5px;
+            margin-right: 10px;
+            float: left;
+        }
+
+        #name {
+            font-size: 1.5em;
+            width: 200px;
+            color: $textColor;
+            padding-left: 5%;
+            //float:right;
+        }
+    }
+
+
+
+    
+    li a {
+        display: block;
+        text-decoration: none;
+        padding: 22px;
+        color: $textColor;
+        text-align: center;
+        
+        &:hover {
+            color: $hoverColor;
+            background: rgb(24, 24, 24);
+        }
+    }
+    
+    .selected{
+                
+        color: $hoverColor;
+        background: rgb(24, 24, 24);
+    }
+
+    
+
+}
+
+@media screen and (max-width: 2200px) {
+
+    li{
+        font-size:  27px;
+        padding-right: 40px;
+        float: left;
+    }
+
+    .subprojects {
+        display: none;
+    }
+     
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        float:right;
+    }
+
+    #menu {
+
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    
+    .menuBtn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    #menu{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        
+    }
+
+    .menuBtn {
+        cursor: pointer;
+        display: inline;
+        margin: 3% 10% 0% 0%;
+        width: 10%;
+        height:100%;
+        
+        img {
+            width: 65px;
+            height: 65px;
+        }
+    }
+
+    .dropdown {
+        display: none;
+        flex-direction: column;
+        top:90px;
+        //width: 100%;
+        li {
+            width: 100%;
+        }
+    }
+
+
+    .subprojects {
+        display: none;
+    }
+
+    .projectslist {
+        display: flex; 
+        flex-direction: column; 
+        align-items: right;
+        justify-content: flex-end; 
+        width: 100%;
+        position: fixed;
+        top: 90px;
+        background: $backgroundHeaderColor;
+    }
+
+    
+}
+
+
+.showMenu {
+    display: flex;
+}
+
+.showLink {
+    display: block;
+}

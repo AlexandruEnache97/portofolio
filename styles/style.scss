@@ -1,0 +1,12 @@
+@import './variables.scss';
+
+@import './header.scss';
+
+@import './content.scss';
+
+body{
+    background: $backgroundHeaderColor;
+    font-family: 'Permanent Marker', cursive;
+    //font-family: 'Sansita Swashed', cursive;;
+}
+
